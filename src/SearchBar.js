@@ -1,26 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
 
-  useEffect(() => {
+  const handleSearch = () => {
     if (searchTerm) {
-      // Make an API request when the search term changes
       axios.get(`http://localhost:8000/api/articles/search?title=${searchTerm}`)
         .then(response => {
-          setSearchResults(response.data);
+          setSearchResults(response.data.articles);
           console.log(searchResults)
         })
         .catch(error => {
           console.error('Error fetching search results:', error);
         });
     } else {
-      // Clear the search results when the search term is empty
       setSearchResults([]);
     }
-  }, [searchTerm]);
+    // setSearchResults([
+    //   { id: 1, title: 'Dummy Article 1', text: 'Dummy Text 1' },
+    //   { id: 2, title: 'Dummy Article 2', text: 'Dummy Text 2' },
+    // ]);
+  };
 
   return (
     <section className="search-bar">
@@ -35,25 +37,24 @@ const SearchBar = () => {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <button className="btn btn-primary" type="button" id="search-button">
+          <button className="btn btn-primary" type="button" id="search-button" onClick={handleSearch}>
             Search
           </button>
         </div>
 
-        {/* Display search results */}
-        {searchResults.length > 0 && (
-          <div className="search-results">
-            <h3>Search Results</h3>
-            <ul>
-              {searchResults.map(article => (
-                <li key={article.id}>
-                  <h4>{article.title}</h4>
-                  <p>{article.text}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+        {searchResults.length > 0 ? (
+        <div className="search-results">
+          <h3>Search Results</h3>
+          <ul>
+            {searchResults.map(article => (
+              <li key={article.id}>
+                <h4>{article.title}</h4>
+                <p>{article.text}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
       </div>
     </section>
   );
