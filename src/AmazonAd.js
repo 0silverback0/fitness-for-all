@@ -4,6 +4,7 @@ const AmazonAd = () => {
   return (
     <div className='text-center mt-3'>
     <iframe
+        title='ad'
       sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin"
       style={{ width: '120px', height: '240px' }}
       marginWidth="0"

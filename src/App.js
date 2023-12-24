@@ -17,11 +17,11 @@ import TrainingArticles from './TrainingArticles';
 
 function App() {
 
-  const trainingItems = [
-    { title: 'Training Item 1', image: 'path-to-image-1.jpg', description: 'Description 1' },
-    { title: 'Training Item 2', image: 'path-to-image-2.jpg', description: 'Description 2' },
-    // Add more training items as needed
-  ];
+  // const trainingItems = [
+  //   { title: 'Training Item 1', image: 'path-to-image-1.jpg', description: 'Description 1' },
+  //   { title: 'Training Item 2', image: 'path-to-image-2.jpg', description: 'Description 2' },
+  //   // Add more training items as needed
+  // ];
 
   return (
     <Router>
