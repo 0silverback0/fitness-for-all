@@ -7,7 +7,7 @@ const TrainingArticles = () => {
 
   useEffect(() => {
     // Fetch training articles from your API
-    axios.get('http://127.0.0.1:8000/api/articles/')
+    axios.get('http://127.0.0.1:8000/api/articles')
       .then(response => {
         setTrainingArticles(response.data);
       })
