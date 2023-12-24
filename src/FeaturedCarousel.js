@@ -18,15 +18,18 @@ const FeaturedCarousel = () => {
           <div className="carousel-inner">
           {/* Featured Item 1 */}
           <div className="carousel-item active" style={{ height: '500px' }}>
+          <a href='/articles/1'>
             <img
               src="images/recovery2.png"
               className="d-block w-100"
               style={{ objectFit: 'cover', height: '100%', width: '100%' }}
               alt="Featured Ebook"
             />
+            </a>
             <div className="carousel-caption d-none d-md-block">
               <h5>New Ebook</h5>
               <p>Discover our latest ebook for a healthier you!</p>
+              
             </div>
           </div>
 

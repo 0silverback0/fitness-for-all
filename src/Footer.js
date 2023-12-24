@@ -1,8 +1,10 @@
 import React from 'react';
+import  './App.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer mt-3 p-3 bg-dark" style={ {"color": "white"}}>
       <div className="container">
         <div className="row">
           <div className="col-md-4">
@@ -12,9 +14,9 @@ const Footer = () => {
           </div>
           <div className="col-md-4">
             <h3>Quick Links</h3>
-            <ul>
+            <ul  id="footer-links" style={ {"listStyle": "none"} }>
               <li><a href="/">Home</a></li>
-              <li><a href="index.html">Training</a></li>
+              <li><a href="/training">Training</a></li>
               <li><a href="index.html">Nutrition</a></li>
               <li><a href="index.html">Recovery</a></li>
               <li><a href="index.html">Shop</a></li>

@@ -35,7 +35,7 @@ const TopArticles = () => {
                     id={article.id}
                     className="btn btn-primary"
                   >
-                    <Link to={`/articles/${article.id}`}>Read More</Link>
+                    <Link style={ {'color': 'white'} } to={`/articles/${article.id}`}>Read More</Link>
                   </button>
                 </div>
               </div>

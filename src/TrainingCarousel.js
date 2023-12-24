@@ -4,7 +4,7 @@ const TrainingCarousel = () => {
   return (
     <section id='training' className="training-carousel">
       <div className="container">
-      <h1 className="mt-5 mb-4">Training Resources</h1>
+      <h1 className="mt-5 mb-4">Training Resources <a href="/training" >see all</a></h1>
 
         {/* Summary Section */}
         <section className="summary">

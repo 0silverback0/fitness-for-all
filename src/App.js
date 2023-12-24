@@ -13,6 +13,7 @@ import ArticlePage from './ArticlePage';  // Import the ArticlePage component
 import TrainingCarousel from './TrainingCarousel';
 import NutritionCarousel from './NutritionCarousel';
 import RecoveryCarousel from './RecoveryCarousel';
+import TrainingArticles from './TrainingArticles';
 
 function App() {
 
@@ -31,12 +32,13 @@ function App() {
         <Routes>
         <Route path="/" element={<>
             <FeaturedCarousel />
+            <TopArticles />
             <TrainingCarousel />
             <NutritionCarousel />
             <RecoveryCarousel />
-            <TopArticles />
           </>} />
           <Route path="/articles/:id" element={<ArticlePage />} />
+          <Route path="/training" element={<TrainingArticles />} />
           {/* Add more routes as needed */}
         </Routes>
         <Footer />
