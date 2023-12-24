@@ -10,12 +10,11 @@ const TrainingArticles = () => {
     axios.get('http://127.0.0.1:8000/api/articles/')
       .then(response => {
         setTrainingArticles(response.data);
-        console.log(trainingArticles)
       })
       .catch(error => {
         console.error('Error fetching training articles:', error);
       });
-  }, []);
+  }, [trainingArticles]);
 
   return (
     <div>
