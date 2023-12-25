@@ -10,7 +10,7 @@ const ArticlePage = () => {
   useEffect(() => {
     const fetchArticle = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/articles/article/${id}`);
+        const response = await axios.get(`https://marz.pythonanywhere.com/api/articles/article/${id}`);
         setArticle(response.data);
         
       } catch (error) {
