@@ -9,19 +9,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SearchBar from './SearchBar';
 import TopArticles from './TopArticles';
 import Footer from './Footer';
-import ArticlePage from './ArticlePage';  // Import the ArticlePage component
-import TrainingCarousel from './TrainingCarousel';
-import NutritionCarousel from './NutritionCarousel';
-import RecoveryCarousel from './RecoveryCarousel';
+import ArticlePage from './ArticlePage'; 
 import TrainingArticles from './TrainingArticles';
+import NutritionArticles from './NutritionArticles';
 
 function App() {
-
-  // const trainingItems = [
-  //   { title: 'Training Item 1', image: 'path-to-image-1.jpg', description: 'Description 1' },
-  //   { title: 'Training Item 2', image: 'path-to-image-2.jpg', description: 'Description 2' },
-  //   // Add more training items as needed
-  // ];
 
   return (
     <Router>
@@ -33,13 +25,12 @@ function App() {
         <Route path="/" element={<>
             <FeaturedCarousel />
             <TopArticles />
-            <TrainingCarousel />
-            <NutritionCarousel />
-            <RecoveryCarousel />
+           
           </>} />
           <Route path="/articles/:id" element={<ArticlePage />} />
           <Route path="/training" element={<TrainingArticles />} />
-          {/* Add more routes as needed */}
+          <Route path='/nutrition' element={<NutritionArticles />} />
+         
         </Routes>
         <Footer />
       </div>
