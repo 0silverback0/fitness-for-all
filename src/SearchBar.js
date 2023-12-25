@@ -8,7 +8,7 @@ const SearchBar = () => {
 
   const handleSearch = () => {
     if (searchTerm) {
-      axios.get(`http://localhost:8000/api/articles/search?title=${searchTerm}`)
+      axios.get(`https://marz.pythonanywhere.com/api/articles/search?title=${searchTerm}`)
         .then(response => {
           setSearchResults(response.data.articles);
           console.log(searchResults);
