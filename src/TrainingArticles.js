@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const TrainingArticles = () => {
   const [trainingArticles, setTrainingArticles] = useState([]);
@@ -29,7 +30,12 @@ const TrainingArticles = () => {
                 <div className="card-body">
                   <h5 className="card-title">{article.title}</h5>
                   <p className="card-text" >{article.description}</p>
-                  {/* Add more details if needed */}
+                  <button
+                    id={article.id}
+                    className="btn btn-primary"
+                  >
+                    <Link style={ {'color': 'white'} } to={`/articles/${article.id}`}>Read More</Link>
+                  </button>
                 </div>
               </div>
             </div>
