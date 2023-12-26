@@ -1,34 +1,34 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const TrainingArticles = () => {
-  const [trainingArticles, setTrainingArticles] = useState([]);
+const RecoveryArticles = () => {
+  const [recoveryArticles, setRecoveryArticles] = useState([]);
 
   useEffect(() => {
     // Fetch all articles from your API
     axios.get('https://marz.pythonanywhere.com/api/articles')
       .then(response => {
-        // Filter articles that have the category "training"
-        const trainingArticles = response.data.filter(article => article.category === 'training');
-        setTrainingArticles(trainingArticles);
+        // Filter articles that have the category "recovery"
+        const recoveryArticles = response.data.filter(article => article.category === 'recovery');
+        setRecoveryArticles(recoveryArticles);
       })
       .catch(error => {
-        console.error('Error fetching articles:', error);
+        console.error('Error fetching recovery articles:', error);
       });
   }, []); // Empty dependency array to fetch data only once when the component mounts
 
   return (
     <div>
-      <h1 className='text-center'>Training Articles</h1>
+      <h1 className='text-center'>Recovery Articles</h1>
       <div className='container'>
         <div className="row">
-          {trainingArticles.map(article => (
+          {recoveryArticles.map(article => (
             <div className='col-md-4' key={article.id}>
               <div className='card'>
                 <img src={article.image} className="card-img-top" alt={article.title} />
                 <div className="card-body">
                   <h5 className="card-title">{article.title}</h5>
-                  <p className="card-text" >{article.description}</p>
+                  <p className="card-text">{article.description}</p>
                   {/* Add more details if needed */}
                 </div>
               </div>
@@ -40,4 +40,4 @@ const TrainingArticles = () => {
   );
 };
 
-export default TrainingArticles;
+export default RecoveryArticles;

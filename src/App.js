@@ -12,12 +12,15 @@ import Footer from './Footer';
 import ArticlePage from './ArticlePage'; 
 import TrainingArticles from './TrainingArticles';
 import NutritionArticles from './NutritionArticles';
+import RecoveryArticles from './RecoveryArticles';
+import BackToTopButton from './BackToTopButton';
 
 function App() {
 
   return (
     <Router>
       <div className="App">
+        <BackToTopButton />
         <Navbar />
         <Header />
         <SearchBar />
@@ -30,7 +33,7 @@ function App() {
           <Route path="/articles/:id" element={<ArticlePage />} />
           <Route path="/training" element={<TrainingArticles />} />
           <Route path='/nutrition' element={<NutritionArticles />} />
-         
+          <Route path='/recovery' element={<RecoveryArticles />} />
         </Routes>
         <Footer />
       </div>

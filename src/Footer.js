@@ -9,16 +9,14 @@ const Footer = () => {
           <div className="col-md-4">
             <h3>Contact Us</h3>
             <p>Email: info@workoutoverload.com</p>
-            <p>Phone: +123 456 7890</p>
           </div>
           <div className="col-md-4">
             <h3>Quick Links</h3>
             <ul  id="footer-links" style={ {"listStyle": "none"} }>
               <li><a href="/">Home</a></li>
               <li><a href="/training">Training</a></li>
-              <li><a href="index.html">Nutrition</a></li>
-              <li><a href="index.html">Recovery</a></li>
-              <li><a href="index.html">Shop</a></li>
+              <li><a href="/nutrition">Nutrition</a></li>
+              <li><a href="/recovery">Recovery</a></li>
             </ul>
           </div>
           <div className="col-md-4">
