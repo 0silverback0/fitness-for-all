@@ -67,17 +67,18 @@ const SearchBar = () => {
 
         {searchResults.length > 0 ? (
           <div className="search-results">
-            <h3>Search Results</h3>
-            <ul>
-              {searchResults.map(article => (
-                <li key={article.id} onClick={handleListItemClick}>
-                  <Link to={`/articles/${article.id}`}>
-                    <h4>{article.title}</h4>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <h3 className="mb-4">Search Results</h3>
+          <ul className="list-group">
+            {searchResults.map(article => (
+              <li key={article.id} onClick={handleListItemClick} className="list-group-item">
+                <Link to={`/articles/${article.id}`} className="text-decoration-none">
+                  <h4 className="mb-0">{article.title}</h4>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        
         ) : null}
       </div>
     </section>
