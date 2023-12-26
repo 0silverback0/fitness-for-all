@@ -30,7 +30,7 @@ const TopArticles = () => {
                 <div className="card-body">
                   <h5 className="card-title">{article.title}</h5>
                   <span>{article.date}</span>
-                  <p className="card-text">{article.text.substring(0, 100)}...</p>
+                  <p className="card-text" >{article.text.substring(0, 100)}...</p>
                   <button
                     id={article.id}
                     className="btn btn-primary"
