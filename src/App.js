@@ -13,12 +13,14 @@ import ArticlePage from './ArticlePage';
 import TrainingArticles from './TrainingArticles';
 import NutritionArticles from './NutritionArticles';
 import RecoveryArticles from './RecoveryArticles';
+import BackToTopButton from './BackToTopButton';
 
 function App() {
 
   return (
     <Router>
       <div className="App">
+        <BackToTopButton />
         <Navbar />
         <Header />
         <SearchBar />

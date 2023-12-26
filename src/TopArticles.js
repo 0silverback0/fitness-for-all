@@ -21,7 +21,7 @@ const TopArticles = () => {
   return (
     <section className="top-articles">
       <div className="container">
-        <h2 className="section-title">Top Articles</h2>
+        <h2 className="section-title text-center m-3">Top Articles</h2>
         <div className="row">
           {articles.map((article) => (
             <div key={article.id} className="col-md-4">
@@ -30,7 +30,7 @@ const TopArticles = () => {
                 <div className="card-body">
                   <h5 className="card-title">{article.title}</h5>
                   <span>{article.date}</span>
-                  <p className="card-text" >{article.text.substring(0, 100)}...</p>
+                  <p className="card-text" >{article.description.substring(0, 100)}...</p>
                   <button
                     id={article.id}
                     className="btn btn-primary"
