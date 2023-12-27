@@ -2,6 +2,7 @@ import React from 'react';
 import  './App.css'
 
 const Footer = () => {
+
   return (
     <footer className="footer mt-3 p-3 bg-dark" style={ {"color": "white"}}>
       <div className="container">
@@ -17,8 +18,10 @@ const Footer = () => {
               <li><a href="/training">Training</a></li>
               <li><a href="/nutrition">Nutrition</a></li>
               <li><a href="/recovery">Recovery</a></li>
+              <li><a href='/disclaimer'>Disclaimer</a></li>
             </ul>
           </div>
+         
           <div className="col-md-4">
             <h3 className='font'>Follow Us</h3>
             {/* <p>Stay connected on social media:</p> */}
