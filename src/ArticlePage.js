@@ -25,7 +25,7 @@ const ArticlePage = () => {
     <div>
       {article ? (
         <div className='container' maxwidth={'80%'}>
-          <h2>{article.title}</h2>
+          <h2 className='text-center'>{article.title}</h2>
           <img className="img-fluid" src={`/${article.image}`} alt=''  width={'100%'} height={'500px'}/>
           {/* <p>{article.text}</p> */}
           <AmazonAd />
