@@ -1,4 +1,8 @@
 #footer-links a{
     text-decoration: none;
-    color: gold;
+    color: white;
+}
+
+.navbar-brand{
+    font-family: 'Rubik Doodle Shadow';
 }

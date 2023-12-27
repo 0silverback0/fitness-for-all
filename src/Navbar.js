@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="/">Workout Overload</a>
+        <a className="navbar-brand" href="/">PeakPursuit.com</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           
           <img style={ {height: '30px', width: '30px'}} src='/images/recovery.png' alt='logo'></img>
