@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import AmazonAd from './AmazonAd';
 
 const ArticlePage = () => {
   const { id } = useParams();
@@ -25,13 +24,12 @@ const ArticlePage = () => {
     <div>
       {article ? (
         <div className='container' maxwidth={'80%'}>
-          <h2 className='text-center'>{article.title}</h2>
+          <h2 className='text-center font'>{article.title}</h2>
           <img className="img-fluid" src={`/${article.image}`} alt=''  width={'100%'} height={'500px'}/>
           {/* <p>{article.text}</p> */}
-          <AmazonAd />
+         
           <div className='mt-3' dangerouslySetInnerHTML={{ __html: article.text }}></div>
           {/* Add more details as needed */}
-          <AmazonAd />
         </div>
         
       ) : (
