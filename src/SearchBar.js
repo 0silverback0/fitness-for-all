@@ -79,7 +79,11 @@ const SearchBar = () => {
           </ul>
         </div>
         
-        ) : null}
+        ) : (
+          <div className="search-results">
+            <p>No Results Found</p>
+          </div>
+        )}
       </div>
     </section>
   );
