@@ -20,7 +20,7 @@ const RecoveryArticles = () => {
 
   return (
     <div>
-      <h1 className='text-center'>Recovery Articles</h1>
+      <h1 className='text-center font'>Recovery Articles</h1>
       <div className='container'>
         <div className="row">
           {recoveryArticles.map(article => (
@@ -35,7 +35,7 @@ const RecoveryArticles = () => {
                     id={article.id}
                     className="btn btn-primary"
                   >
-                    <Link style={ {'color': 'white'} } to={`/articles/${article.id}`}>Read More</Link>
+                    <Link style={ {'color': 'white', 'textDecoration': 'none'} } to={`/articles/${article.id}`}>Read More</Link>
                   </button>
                 </div>
               </div>

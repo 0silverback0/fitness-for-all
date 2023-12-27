@@ -35,7 +35,7 @@ const NutritionArticles = () => {
                     id={article.id}
                     className="btn btn-primary"
                   >
-                    <Link style={ {'color': 'white'} } to={`/articles/${article.id}`}>Read More</Link>
+                    <Link style={ {'color': 'white', 'textDecoration': 'none'} } to={`/articles/${article.id}`}>Read More</Link>
                   </button>
                 </div>
               </div>

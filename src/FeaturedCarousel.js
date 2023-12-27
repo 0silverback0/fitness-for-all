@@ -4,7 +4,7 @@ const FeaturedCarousel = () => {
   return (
     <section className="featured-carousel">
       <div className="container">
-        <h2 className="section-title text-center">Featured Items</h2>
+        <h2 className="section-title text-center font">Featured Items</h2>
         <div id="featuredCarousel" className="carousel slide" data-bs-ride="carousel">
 
           {/* Carousel Indicators */}
