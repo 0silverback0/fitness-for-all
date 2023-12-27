@@ -15,6 +15,7 @@ import NutritionArticles from './NutritionArticles';
 import RecoveryArticles from './RecoveryArticles';
 import BackToTopButton from './BackToTopButton';
 import AmazonAdCombo from './AmazonAdCombo';
+import Disclaimer from './Disclaimer';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/training" element={<TrainingArticles />} />
           <Route path='/nutrition' element={<NutritionArticles />} />
           <Route path='/recovery' element={<RecoveryArticles />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
         </Routes>
         <AmazonAdCombo />
         <Footer />
