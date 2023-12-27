@@ -31,6 +31,7 @@ const Footer = () => {
 </svg>
             {/* Add social media icons or links here */}
           </div>
+          <span className='text-center'>&copy; PeakPursuit.com</span>
         </div>
       </div>
     </footer>
