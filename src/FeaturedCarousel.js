@@ -25,7 +25,7 @@ const FeaturedCarousel = () => {
               style={{ objectFit: 'cover', height: '100%', width: '100%' }}
               alt="Featured Ebook"
             />
-            </a>
+          </a>
             <div className="carousel-caption d-none d-md-block">
               <h5>New Ebook</h5>
               <p>Discover our latest ebook for a healthier you!</p>
