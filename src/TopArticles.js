@@ -23,19 +23,25 @@ const TopArticles = () => {
         <div className="row">
           {articles.map((article) => (
             <div key={article.id} className="col-md-4">
-              <div className="card mb-3">
+              <div className="card mb-3" style={ {"height": "320px"}}>
               <img src={`${article.image}`} className="card-img-top" alt={`${article.title}`} />
                 <div className="card-body">
                   <h5 className="card-title">{article.title}</h5>
                   <span>{article.date}</span>
-                  <p className="card-text" >{article.description.substring(0, 100)}...</p>
-                  <button
+                  <p className="card-text" >{article.description.substring(0, 50)}...</p>
+                  {/* <button
                     id={article.id}
                     className="btn btn-primary"
                   >
                     <Link style={ {'color': 'white', 'textDecoration': 'none', 'border': 'none'} } to={`/articles/${article.id}`}>Read More</Link>
-                  </button>
+                  </button> */}
                 </div>
+                <button
+                    id={article.id}
+                    className="btn btn-primary m-auto mb-3"
+                  >
+                    <Link style={ {'color': 'white', 'textDecoration': 'none', 'border': 'none'} } to={`/articles/${article.id}`}>Read More</Link>
+                  </button>
               </div>
             </div>
           ))}
