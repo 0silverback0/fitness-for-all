@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-4">
             <h3 className='font'>Contact Us</h3>
-            <p>Email: info@peakpursuit.com</p>
+            <p>Email: info@apexmindapexbody.com</p>
           </div>
           <div className="col-md-4">
             <h3 className='font'>Quick Links</h3>
@@ -38,7 +38,7 @@ const Footer = () => {
 
             {/* Add social media icons or links here */}
           </div>
-          <span className='text-center font'>&copy; PeakPursuit.com</span>
+          <span className='text-center font'>&copy; apexmindapexbody.com</span>
         </div>
       </div>
     </footer>
