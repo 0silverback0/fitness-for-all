@@ -4,11 +4,13 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="/">PeakPursuit.com</a>
+        <a className="navbar-brand" href="/">ApexMindApexBody</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           
-          
-          <img style={ {height: '60px', width: '70px'}} src='/images/pplogo.png' alt='logo'></img>
+        <span class="material-symbols-outlined">
+          stat_3
+        </span>
+          {/* <img style={ {height: '60px', width: '70px'}} src='/images/pplogo.png' alt='logo'></img> */}
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
