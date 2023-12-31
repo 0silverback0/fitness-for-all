@@ -16,50 +16,49 @@ const FeaturedCarousel = () => {
 
           {/* Carousel Items */}
           <div className="carousel-inner">
-          {/* Featured Item 1 */}
-          <div className="carousel-item active" style={{ height: '500px' }}>
-          <a href='/articles/1'>
-            <img
-              src="images/recovery2.png"
-              className="d-block w-100"
-              style={{ objectFit: 'cover', height: '100%', width: '100%' }}
-              alt="Featured Ebook"
-            />
-          </a>
-            <div className="carousel-caption d-none d-md-block">
-              <h5>New Ebook</h5>
-              <p>Discover our latest ebook for a healthier you!</p>
-              
+            {/* Featured Item 1 */}
+            <div className="carousel-item active" >
+              <a href='/articles/1'>
+                <img
+                  src="images/Rubik-Distressed.webp"
+                  className="d-block w-100 img-fluid"
+                  style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+                  alt="Featured Ebook"
+                />
+              </a>
+              {/* <div className="carousel-caption d-none d-md-block">
+                <h5>New Ebook</h5>
+                <p>Discover our latest ebook for a healthier you!</p>
+              </div> */}
             </div>
-          </div>
 
             {/* Featured Item 2 */}
-          <div className="carousel-item" style={{ height: '500px' }}>
-            <img
-              src="images/eat-healthy.png"
-              className="d-block w-100"
-              style={{ objectFit: 'cover', height: '100%', width: '100%' }}
-              alt="Featured Workout Program"
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Workout Program</h5>
-              <p>Revolutionize your fitness routine with our new workout program.</p>
+            <div className="carousel-item">
+              <img
+                src="images/Rubik-Distressed.webp"
+                className="d-block w-100 img-fluid" 
+                style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+                alt="Featured Workout Program"
+              />
+              {/* <div className="carousel-caption d-none d-md-block">
+                <h5>Workout Program</h5>
+                <p>Revolutionize your fitness routine with our new workout program.</p>
+              </div> */}
             </div>
-          </div>
 
-          {/* Featured Item 3 */}
-          <div className="carousel-item" style={{ height: '500px' }}>
-            <img
-              src="images/advantages-of-pushups.png"
-              className="d-block w-100"
-              style={{ objectFit: 'cover', height: '100%', width: '100%' }}
-              alt="Featured Supplement"
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Supplement Launch</h5>
-              <p>Boost your performance with our latest supplement.</p>
+            {/* Featured Item 3 */}
+            <div className="carousel-item">
+              <img
+                src="images/Rubik-Distressed.webp"
+                className="d-block w-100 img-fluid"
+                style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+                alt="Featured Supplement"
+              />
+              {/* <div className="carousel-caption d-none d-md-block">
+                <h5>Supplement Launch</h5>
+                <p>Boost your performance with our latest supplement.</p>
+              </div> */}
             </div>
-          </div>
 
           </div>
 
