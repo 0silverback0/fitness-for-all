@@ -26,8 +26,8 @@ const TopArticles = () => {
               <div className="card mb-3">
               <img src={`${article.image}`} className="card-img-top" alt={`${article.title}`} />
                 <div className="card-body">
-                  <h5 className="card-title">{article.title}</h5>
-                  <span>{article.date}</span>
+                  <h5 className="card-title header-text">{article.title}</h5>
+                  <i style={ {'color': '#0d6efd', 'fontSize': '12px'}}>published <span>{article.date}</span></i>
                   <p className="card-text" >{article.description.substring(0, 100)}...</p>
                   <button
                     id={article.id}

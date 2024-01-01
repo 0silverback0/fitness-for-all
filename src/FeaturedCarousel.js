@@ -18,7 +18,7 @@ const FeaturedCarousel = () => {
           <div className="carousel-inner">
             {/* Featured Item 1 */}
             <div className="carousel-item active" >
-              <a href='/articles/1'>
+              <a href='/articles/3'>
                 <img
                   src="images/Rubik-Distressed.webp"
                   className="d-block w-100 img-fluid"
@@ -48,12 +48,14 @@ const FeaturedCarousel = () => {
 
             {/* Featured Item 3 */}
             <div className="carousel-item">
+              <a href='/articles/8'>
               <img
                 src="images/protein.webp"
                 className="d-block w-100 img-fluid"
                 style={{ objectFit: 'cover', height: '100%', width: '100%' }}
                 alt="Featured Supplement"
               />
+              </a>
               {/* <div className="carousel-caption d-none d-md-block">
                 <h5>Supplement Launch</h5>
                 <p>Boost your performance with our latest supplement.</p>

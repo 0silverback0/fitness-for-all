@@ -9,16 +9,17 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-4">
             <h3 className='font'>Contact Us</h3>
-            <p>Email: info@apexmindapexbody.com</p>
+            <p>Email:</p>
+            <p className='header-text'>apexmindapexbody@gmail.com</p>
           </div>
           <div className="col-md-4">
             <h3 className='font'>Quick Links</h3>
             <ul  id="footer-links" style={ {"listStyle": "none"} }>
-              <li><a href="/">Home</a></li>
-              <li><a href="/training">Training</a></li>
-              <li><a href="/nutrition">Nutrition</a></li>
-              <li><a href="/recovery">Recovery</a></li>
-              <li><a href='/disclaimer'>Disclaimer</a></li>
+              <li className='header-text'><a href="/">Home</a></li>
+              <li className='header-text'><a href="/training">Training</a></li>
+              <li className='header-text'><a href="/nutrition">Nutrition</a></li>
+              <li className='header-text'><a href="/recovery">Recovery</a></li>
+              <li className='header-text'><a href='/disclaimer'>Disclaimer</a></li>
             </ul>
           </div>
          
