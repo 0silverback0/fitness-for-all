@@ -25,7 +25,7 @@ const BackToTopButton = () => {
 
   return (
     <button
-      className={`back-to-top-button ${isVisible ? 'visible' : ''}`}
+      className={`back-to-top-button header-text ${isVisible ? 'visible' : ''}`}
       onClick={scrollToTop}
     >
       Back to Top
