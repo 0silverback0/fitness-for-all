@@ -31,7 +31,7 @@ const TopArticles = () => {
                   <p className="card-text" >{article.description.substring(0, 50)}...</p>
                   <button
                     id={article.id}
-                    className="btn btn-primary"
+                    className="btn btn-primary mb-3"
                   >
                     <Link style={ {'color': 'white', 'textDecoration': 'none', 'border': 'none'} } to={`/articles/${article.id}`}>Read More</Link>
                   </button>
