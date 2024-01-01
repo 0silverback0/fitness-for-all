@@ -1,0 +1,16 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch v2
+# Changes to be committed:
+#	modified:   ../index.html
+#	modified:   ../../src/App.css
+#	modified:   ../../src/FeaturedCarousel.js
+#	modified:   ../../src/Navbar.js
+#
+# Untracked files:
+#	../../.DS_Store
+#	../../build/
+#	../.DS_Store
+#

@@ -28,7 +28,7 @@ const TopArticles = () => {
                 <div className="card-body">
                   <h5 className="card-title">{article.title}</h5>
                   <span>{article.date}</span>
-                  <p className="card-text" >{article.description.substring(0, 50)}...</p>
+                  <p className="card-text" >{article.description.substring(0, 100)}...</p>
                   <button
                     id={article.id}
                     className="btn btn-primary mb-3"
@@ -36,12 +36,7 @@ const TopArticles = () => {
                     <Link style={ {'color': 'white', 'textDecoration': 'none', 'border': 'none'} } to={`/articles/${article.id}`}>Read More</Link>
                   </button>
                 </div>
-                {/* <button
-                    id={article.id}
-                    className="btn btn-primary m-auto"
-                  >
-                    <Link style={ {'color': 'white', 'textDecoration': 'none', 'border': 'none'} } to={`/articles/${article.id}`}>Read More</Link>
-                  </button> */}
+        
               </div>
             </div>
           ))}

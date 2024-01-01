@@ -29,7 +29,7 @@ const NutritionArticles = () => {
                 <img src={article.image} className="card-img-top" alt={article.title} />
                 <div className="card-body">
                   <h5 className="card-title">{article.title}</h5>
-                  <p className="card-text">{article.description}</p>
+                  <p className="card-text">{article.description.substring(0, 100)}...</p>
                   {/* Add more details if needed */}
                   <button
                     id={article.id}
