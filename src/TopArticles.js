@@ -23,7 +23,7 @@ const TopArticles = () => {
         <div className="row">
           {articles.map((article) => (
             <div key={article.id} className="col-md-4">
-              <div className="card mb-3" style={ {"height": "320px"}}>
+              <div className="card mb-3" style={ {"height": "330px"}}>
               <img src={`${article.image}`} className="card-img-top" alt={`${article.title}`} />
                 <div className="card-body">
                   <h5 className="card-title">{article.title}</h5>
