@@ -52,4 +52,3 @@ const TopArticles = () => {
 };
 
 export default TopArticles;
-
