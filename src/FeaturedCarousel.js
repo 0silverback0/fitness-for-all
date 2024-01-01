@@ -49,7 +49,7 @@ const FeaturedCarousel = () => {
             {/* Featured Item 3 */}
             <div className="carousel-item">
               <img
-                src="images/Rubik-Distressed.webp"
+                src="images/protein.webp"
                 className="d-block w-100 img-fluid"
                 style={{ objectFit: 'cover', height: '100%', width: '100%' }}
                 alt="Featured Supplement"
