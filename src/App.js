@@ -16,9 +16,9 @@ import RecoveryArticles from './RecoveryArticles';
 import BackToTopButton from './BackToTopButton';
 import AmazonAdCombo from './AmazonAdCombo';
 import Disclaimer from './Disclaimer';
-// import ReactGA from 'react-ga';
+import ReactGA from 'react-ga';
 
-// ReactGA.initialize('UA-XXXXXXXXX-X');
+ReactGA.initialize('G-GXQLQ87K9N');
 
 function App() {
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 const ArticlePage = () => {
   const { id } = useParams();
@@ -19,6 +20,10 @@ const ArticlePage = () => {
 
     fetchArticle();
   }, [id]);
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <div>
