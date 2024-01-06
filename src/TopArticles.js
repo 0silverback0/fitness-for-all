@@ -18,8 +18,8 @@ const TopArticles = () => {
 
   return (
     <section className="top-articles">
-      <div className="container">
-        <h2 className="section-title text-center font m-3">Top Articles</h2>
+      <div className="container text-center">
+        <h2 className="section-title font m-3">Top Articles</h2>
         <div className="row">
           {articles.map((article) => (
             <div key={article.id} className="col-md-4">
