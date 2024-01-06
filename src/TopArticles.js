@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import ResponsiveImage from './ResponsiveImage';
 
 const TopArticles = () => {
   const [articles, setArticles] = useState([]);
@@ -24,7 +25,8 @@ const TopArticles = () => {
           {articles.map((article) => (
             <div key={article.id} className="col-md-4">
               <div className="card mb-3">
-              <img src={`${article.image}`} className="card-img-top" alt={`${article.title}`} />
+              {/* <img src={`${article.image}`} className="card-img-top" alt={`${article.title}`} /> */}
+              <ResponsiveImage className='img-card-top' originalImageUrl={article.image} />
                 <div className="card-body">
                   <h5 className="card-title header-text">{article.title}</h5>
                   <i style={ {'color': '#0d6efd', 'fontSize': '12px'}}>published <span>{article.date}</span></i>
