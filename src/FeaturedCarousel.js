@@ -32,21 +32,33 @@ const FeaturedCarousel = () => {
             </div>
 
             <div className="carousel-item">
-              <img
-                src="images/apexBlue/apexBlue.webp"
-                className="d-block w-100 img-fluid" 
+            <img
+                srcSet="images/apexblue/300x120.webp 300w,
+                images/apexblue/700x270.webp 700w,
+                images/apexblue/1300x500.webp 1300w"
+                sizes="(max-width: 576px) 300px,
+                (max-width: 992px) 700px,
+                1300px"
+                src="images/apexblue/selfcare.webp"
+                className="d-block w-100 img-fluid"
                 style={{ objectFit: 'cover', height: '100%', width: '100%' }}
-                alt="Featured Workout Program"
+                alt="apex logo"
               />
             </div>
 
             <div className="carousel-item">
               <a href='/articles/8'>
               <img
-                src="images/protein/protein.webp"
+                srcSet="images/protein/300x120.webp 300w,
+                images/protein/700x270.webp 700w,
+                images/protein/1300x500.webp 1300w"
+                sizes="(max-width: 576px) 300px,
+                (max-width: 992px) 700px,
+                1300px"
+                src="images/protein/selfcare.webp"
                 className="d-block w-100 img-fluid"
                 style={{ objectFit: 'cover', height: '100%', width: '100%' }}
-                alt="Featured Supplement"
+                alt="Featured Ebook"
               />
               </a>
             </div>
