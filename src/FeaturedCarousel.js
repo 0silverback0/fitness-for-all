@@ -16,12 +16,18 @@ const FeaturedCarousel = () => {
           <div className="carousel-inner">
             <div className="carousel-item active" >
               <a href='/articles/3'>
-                <img
-                  src="images/Rubik-Distressed.webp"
-                  className="d-block w-100 img-fluid"
-                  style={{ objectFit: 'cover', height: '100%', width: '100%' }}
-                  alt="Featured Ebook"
-                />
+              <img
+                srcSet="images/300x120.webp 300w,
+                images/700x270.webp 700w,
+                images/1300x500.webp 1300w"
+                sizes="(max-width: 576px) 300px,
+                (max-width: 992px) 700px,
+                1300px"
+                src="images/Rubik-Distressed.webp"
+                className="d-block w-100 img-fluid"
+                style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+                alt="Featured Ebook"
+              />
               </a>
             </div>
 
