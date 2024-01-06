@@ -26,7 +26,7 @@ const TrainingArticles = () => {
     <div>
       <h1 className='text-center font'>Training Articles</h1>
       <div className='container'>
-        <div className="row">
+        <div className="row justify-content-center text-center">
           {trainingArticles.map(article => (
             <div className='col-md-4 m-2' key={article.id}>
               <div className='card'>
