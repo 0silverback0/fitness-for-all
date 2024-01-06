@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import ReactGA from 'react-ga'
+import ResponsiveImage from './ResponsiveImage';
 
 const RecoveryArticles = () => {
   const [recoveryArticles, setRecoveryArticles] = useState([]);
@@ -30,7 +31,8 @@ const RecoveryArticles = () => {
           {recoveryArticles.map(article => (
             <div className='col-md-4 m-2' key={article.id}>
               <div className='card'>
-                <img src={article.image} className="card-img-top" alt={article.title} />
+                {/* <img src={article.image} className="card-img-top" alt={article.title} /> */}
+                <ResponsiveImage originalImageUrl={article.image} />
                 <div className="card-body">
                   <h5 className="card-title header-text">{article.title}</h5>
                   <i style={ {'color': '#0d6efd', 'fontSize': '12px'}}>published <span>{article.date}</span></i>
