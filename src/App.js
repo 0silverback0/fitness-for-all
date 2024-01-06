@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Navbar from './Navbar';
 import FeaturedCarousel from './FeaturedCarousel';
 import Header from './Header';
-import React from 'react';
+import {React, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SearchBar from './SearchBar';
 import TopArticles from './TopArticles';
@@ -14,13 +14,19 @@ import TrainingArticles from './TrainingArticles';
 import NutritionArticles from './NutritionArticles';
 import RecoveryArticles from './RecoveryArticles';
 import BackToTopButton from './BackToTopButton';
-import AmazonAdCombo from './AmazonAdCombo';
 import Disclaimer from './Disclaimer';
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('G-GXQLQ87K9N');
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.initialize('G-XXXXXXXXXX');
+    
+    console.log('home page')
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <Router>
@@ -41,7 +47,6 @@ function App() {
           <Route path='/recovery' element={<RecoveryArticles />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
         </Routes>
-        <AmazonAdCombo />
         <Footer />
       </div>
     </Router>

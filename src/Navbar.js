@@ -7,7 +7,7 @@ const Navbar = () => {
         <a className="navbar-brand" href="/">Apex Mind Apex Body</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           
-        <span class="material-symbols-outlined">
+        <span className="material-symbols-outlined">
           stat_3
         </span>
           {/* <img style={ {height: '60px', width: '70px'}} src='/images/pplogo.png' alt='logo'></img> */}

@@ -37,7 +37,6 @@ const Footer = () => {
             </svg>
            </div>  
 
-            {/* Add social media icons or links here */}
           </div>
           <span className='text-center font'>&copy; apexmindapexbody.com</span>
         </div>
