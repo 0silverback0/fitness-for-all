@@ -1,22 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 const TrainingArticles = () => {
   const [trainingArticles, setTrainingArticles] = useState([]);
 
   useEffect(() => {
-    // Fetch all articles from your API
     axios.get('https://marz.pythonanywhere.com/api/articles')
       .then(response => {
-        // Filter articles that have the category "training"
         const trainingArticles = response.data.filter(article => article.category === 'training');
         setTrainingArticles(trainingArticles);
       })
       .catch(error => {
         console.error('Error fetching articles:', error);
       });
-  }, []); // Empty dependency array to fetch data only once when the component mounts
+  }, []);
+
+  useEffect(() => {
+    console.log('Tracking page view:', window.location.pathname + window.location.search);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <div>

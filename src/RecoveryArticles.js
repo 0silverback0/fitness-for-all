@@ -1,22 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import ReactGA from 'react-ga'
 
 const RecoveryArticles = () => {
   const [recoveryArticles, setRecoveryArticles] = useState([]);
 
   useEffect(() => {
-    // Fetch all articles from your API
     axios.get('https://marz.pythonanywhere.com/api/articles')
       .then(response => {
-        // Filter articles that have the category "recovery"
         const recoveryArticles = response.data.filter(article => article.category === 'recovery');
         setRecoveryArticles(recoveryArticles);
       })
       .catch(error => {
         console.error('Error fetching recovery articles:', error);
       });
-  }, []); // Empty dependency array to fetch data only once when the component mounts
+  }, []); 
+
+  useEffect(() => {
+    console.log('Tracking page view:', window.location.pathname + window.location.search);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <div>
@@ -31,7 +35,7 @@ const RecoveryArticles = () => {
                   <h5 className="card-title header-text">{article.title}</h5>
                   <i style={ {'color': '#0d6efd', 'fontSize': '12px'}}>published <span>{article.date}</span></i>
                   <p className="card-text">{article.description.substring(0, 100)}...</p>
-                  {/* Add more details if needed */}
+                  
                   <button
                     id={article.id}
                     className="btn btn-primary"

@@ -22,8 +22,9 @@ const ArticlePage = () => {
   }, [id]);
 
   useEffect(() => {
+    console.log('Tracking page view:', window.location.pathname + window.location.search);
     ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  }, [id]);
 
   return (
     <div>
@@ -31,10 +32,9 @@ const ArticlePage = () => {
         <div className='container' maxwidth={'80%'}>
           <h2 className='text-center font'>{article.title}</h2>
           <img className="img-fluid" src={`/${article.image}`} alt=''  width={'100%'} height={'500px'}/>
-          {/* <p>{article.text}</p> */}
          
           <div className='mt-3' dangerouslySetInnerHTML={{ __html: article.text }}></div>
-          {/* Add more details as needed */}
+          
         </div>
         
       ) : (
