@@ -16,6 +16,7 @@ import RecoveryArticles from './RecoveryArticles';
 import BackToTopButton from './BackToTopButton';
 import Disclaimer from './Disclaimer';
 import ReactGA from 'react-ga';
+import MetaDescription from './MetaDescription';
 
 ReactGA.initialize('G-GXQLQ87K9N');
 
@@ -31,6 +32,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <MetaDescription />
         <BackToTopButton />
         <Navbar />
         <Header />

@@ -28,7 +28,7 @@ const TopArticles = () => {
               {/* <img src={`${article.image}`} className="card-img-top" alt={`${article.title}`} /> */}
               <ResponsiveImage className='img-card-top' originalImageUrl={article.image} />
                 <div className="card-body">
-                  <h5 className="card-title header-text">{article.title}</h5>
+                  <h3 className="card-title header-text">{article.title}</h3>
                   <i style={ {'color': '#0d6efd', 'fontSize': '12px'}}>published <span>{article.date}</span></i>
                   <p className="card-text" >{article.description.substring(0, 100)}...</p>
                   <button
