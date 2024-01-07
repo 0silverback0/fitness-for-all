@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="col-md-4">
             <h3 className='font'>Contact Us</h3>
             <p>Email:</p>
-            <p className='header-text'>apexmindapexbody@gmail.com</p>
+            <p className='header-text'>apexmindapexbodyinfo@gmail.com</p>
           </div>
           <div className="col-md-4">
             <h3 className='font'>Quick Links</h3>
