@@ -25,7 +25,7 @@ const RecoveryArticles = () => {
 
   return (
     <div>
-      <h1 className='text-center font'>Recovery Articles</h1>
+      <h1 className='text-center font'>Recovery</h1>
       <div className='container'>
         <div className="row justify-content-center text-center">
           {recoveryArticles.map(article => (
