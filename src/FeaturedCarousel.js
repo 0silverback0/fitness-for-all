@@ -15,18 +15,18 @@ const FeaturedCarousel = () => {
 
           <div className="carousel-inner">
             <div className="carousel-item active" >
-              <a href='/articles/3'>
+              <a href='/articles/10'>
               <img
-                srcSet="images/selfcare/300x120.webp 300w,
-                images/selfcare/700x270.webp 700w,
-                images/selfcare/1300x500.webp 1300w"
+                srcSet="images/vert-jump/300x120.webp 300w,
+                images/vert-jump/700x270.webp 700w,
+                images/vert-jump/1300x500.webp 1300w"
                 sizes="(max-width: 576px) 300px,
                 (max-width: 992px) 700px,
                 1300px"
-                src="images/selfcare/selfcare.webp"
+                src="images/vert-jump/vert-jump.webp"
                 className="d-block w-100 img-fluid"
                 style={{ objectFit: 'cover', height: '100%', width: '100%' }}
-                alt="Featured Ebook"
+                alt="verticle jump article"
               />
               </a>
             </div>
