@@ -17,6 +17,7 @@ const Navbar = () => {
             <li className="nav-item header-text"><a className="nav-link" href="/training">Training</a></li>
             <li className="nav-item header-text"><a className="nav-link" href="/nutrition">Nutrition</a></li>
             <li className="nav-item header-text"><a className="nav-link" href="/recovery">Recovery</a></li>
+            <li className="nav-item header-text"><a className="nav-link" href="/mindset">Mindset</a></li>
           </ul>
         </div>
       </div>

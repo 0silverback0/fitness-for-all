@@ -13,6 +13,7 @@ import ArticlePage from './ArticlePage';
 import TrainingArticles from './TrainingArticles';
 import NutritionArticles from './NutritionArticles';
 import RecoveryArticles from './RecoveryArticles';
+import MindSetArticles from './MIndSetArticles';
 import BackToTopButton from './BackToTopButton';
 import Disclaimer from './Disclaimer';
 import ReactGA from 'react-ga';
@@ -47,6 +48,7 @@ function App() {
           <Route path="/training" element={<TrainingArticles />} />
           <Route path='/nutrition' element={<NutritionArticles />} />
           <Route path='/recovery' element={<RecoveryArticles />} />
+          <Route path='/mindset' element={<MindSetArticles />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
         </Routes>
         <Footer />
