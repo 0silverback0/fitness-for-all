@@ -18,15 +18,14 @@ import BackToTopButton from './BackToTopButton';
 import Disclaimer from './Disclaimer';
 import ReactGA from 'react-ga';
 import MetaDescription from './MetaDescription';
-
+import CalculatorsPage from './CalculatorsPage';
 ReactGA.initialize('G-GXQLQ87K9N');
+
 
 function App() {
 
   useEffect(() => {
     ReactGA.initialize('G-XXXXXXXXXX');
-    
-    console.log('home page')
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
@@ -49,6 +48,7 @@ function App() {
           <Route path='/nutrition' element={<NutritionArticles />} />
           <Route path='/recovery' element={<RecoveryArticles />} />
           <Route path='/mindset' element={<MindSetArticles />} />
+          <Route path='/calculators' element={<CalculatorsPage />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
         </Routes>
         <Footer />

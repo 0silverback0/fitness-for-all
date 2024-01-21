@@ -19,6 +19,7 @@ const Footer = () => {
               <li className='header-text'><a href="/training">Training</a></li>
               <li className='header-text'><a href="/nutrition">Nutrition</a></li>
               <li className='header-text'><a href="/recovery">Recovery</a></li>
+              <li className='header-text'><a href="/calculators">Calculators</a></li>
               <li className='header-text'><a href='/disclaimer'>Disclaimer</a></li>
             </ul>
           </div>
